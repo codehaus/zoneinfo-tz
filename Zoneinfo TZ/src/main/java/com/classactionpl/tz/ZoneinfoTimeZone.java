@@ -132,6 +132,7 @@ public class ZoneinfoTimeZone extends TimeZone {
 
 	@Override
 	public Object clone() {
+		super.clone();
 		ZoneinfoTimeZone timeZone = new ZoneinfoTimeZone();
 		timeZone.setZone(zone);
 		return timeZone;

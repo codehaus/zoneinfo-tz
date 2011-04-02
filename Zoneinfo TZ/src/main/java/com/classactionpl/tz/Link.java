@@ -31,6 +31,11 @@ import java.util.Date;
 public class Link extends AbstractZone {
 
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	/**
 	 * The zone to link to.
 	 */
 	private AbstractZone targetZone;

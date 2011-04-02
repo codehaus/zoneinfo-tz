@@ -19,6 +19,7 @@
 
 package com.classactionpl.tz;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -30,7 +31,7 @@ import java.util.TimeZone;
  * @author huntc
  * 
  */
-public class Rule {
+public class Rule implements Serializable {
 	/** */
 	enum OnType {
 		/**
@@ -66,6 +67,11 @@ public class Rule {
 		/** */
 		min, max, value
 	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Given a year and in, on and at values resolve to a date object.

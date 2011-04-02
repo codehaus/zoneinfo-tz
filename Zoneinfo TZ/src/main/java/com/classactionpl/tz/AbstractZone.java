@@ -19,6 +19,7 @@
 
 package com.classactionpl.tz;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 
@@ -33,7 +34,12 @@ import java.util.Date;
  * @author huntc
  * 
  */
-public abstract class AbstractZone {
+public abstract class AbstractZone implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The name of the time zone. This is the name used in creating the time
 	 * conversion information file for the zone.

@@ -19,6 +19,7 @@
 
 package com.classactionpl.tz;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -36,7 +37,12 @@ import com.classactionpl.tz.Rule.TimeOfDayType;
  * @author huntc
  * 
  */
-public class ZoneDetail {
+public class ZoneDetail implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Cache the time zone representing UTC for greater efficiency.
 	 */

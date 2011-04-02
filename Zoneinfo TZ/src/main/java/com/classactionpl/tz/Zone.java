@@ -31,6 +31,11 @@ import java.util.List;
  */
 public class Zone extends AbstractZone {
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
 	 * A set of details describing the zone. There must be at least one. Details
 	 * are expected in earliest detail first.
 	 */

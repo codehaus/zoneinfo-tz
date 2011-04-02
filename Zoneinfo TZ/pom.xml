@@ -53,9 +53,9 @@
 	<distributionManagement>
 		<downloadUrl>http://dist.codehaus.org/zoneinfo-tz/</downloadUrl>
 		<repository>
-			<id>org.codehaus.zoneinfo-tz</id>
+			<id>zoneinfo-tz</id>
 			<name>Zoneinfo TZ Repository</name>
-			<url>http://repository.codehaus.org/org/codehaus/zoneinfo-tz/</url>
+			<url>dav:https://dav.codehaus.org/repository/zoneinfo-tz//</url>
 		</repository>
 		<site>
 			<id>zoneinfo-tz</id>
@@ -63,9 +63,9 @@
 			<url>dav:https://dav.codehaus.org/zoneinfo-tz/</url>
 		</site>
 		<snapshotRepository>
-			<id>org.codehaus.zoneinfo-tz</id>
+			<id>zoneinfo-tz</id>
 			<name>Zoneinfo TZ Snapshot Repository</name>
-			<url>http://snapshots.repository.codehaus.org/org/codehaus/zoneinfo-tz/
+			<url>dav:https://dav.codehaus.org/snapshots.dist/zoneinfo-tz/
 			</url>
 		</snapshotRepository>
 	</distributionManagement>

@@ -1,0 +1,32 @@
+h1. Zoneinfo TZ
+
+Zoneinfo TZ is a Java time zone library that parses [zoneinfo|http://www.twinsun.com/tz/tz-link.htm] files and produces a JDK compatible facade for returning time zone information. The library uses ANTLR to parse the zoneinfo files. The following diagram outlines its structure:
+
+!images/classDiagram.png!
+
+The motivations to create this library were to:
+* be able to dynamically update time zone information without restarting an application; and
+* be able to honour the zoneinfo structure.
+
+The following code illustrates how a file based zoneinfo resource can be loaded:
+
+{code}
+ZoneFactory factory = new ZoneFactory();
+Map<String, AbstractZone> zones = ZoneinfoTimeZone.getZones();
+factory.parse(ZoneinfoTimeZoneTest.class.getResourceAsStream("europe"), zones);
+{code}
+
+To get a time zone you can then obtain it in the regular JDK way:
+
+{code}
+TimeZone tz = ZoneinfoTimeZone.getTimeZone("Europe/London");
+{code}
+
+To get an offset given a date you can then:
+
+{code}
+int offset = tz.getOffset(GregorianCalendar.AD, 2010, Calendar.APRIL, 3, 
+    Calendar.SATURDAY, 15 * 60 * 60 * 1000)
+{code}
+
+This project is an alternative to what has been proposed for time zones in [JSR-310 | http://jcp.org/en/jsr/detail?id=310].

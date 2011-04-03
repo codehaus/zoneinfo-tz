@@ -8,6 +8,10 @@ The motivations to create this library were to:
 * be able to dynamically update time zone information without restarting an application; and
 * be able to honour the zoneinfo structure.
 
+{note}
+The 1.0.0 version of this project will be available from the Maven central repository shortly. Meanwhile it can be obtained by adding https://dav.codehaus.org/repository/zoneinfo-tz/ as a release repository to your Maven environment.
+{note}
+
 The following code illustrates how a file based zoneinfo resource can be loaded:
 
 {code}

@@ -8,6 +8,12 @@
 	<description>Brings the ability to parse a zoneinfo text stream and
 		create Java's SimpleTimeZone classes from them.</description>
 
+	<parent>
+		<groupId>org.codehaus</groupId>
+		<artifactId>codehaus-parent</artifactId>
+		<version>3</version>
+	</parent>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -45,6 +51,20 @@
 					<excludeModules>apt</excludeModules>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<ciManagement>
@@ -66,23 +86,12 @@
 		</developer>
 	</developers>
 	<distributionManagement>
-		<downloadUrl>http://dist.codehaus.org/zoneinfo-tz/</downloadUrl>
-		<repository>
-			<id>zoneinfo-tz</id>
-			<name>Zoneinfo TZ Repository</name>
-			<url>dav:https://dav.codehaus.org/repository/zoneinfo-tz//</url>
-		</repository>
+		<downloadUrl>https://nexus.codehaus.org/content/groups/public</downloadUrl>
 		<site>
 			<id>zoneinfo-tz</id>
 			<name>Website</name>
 			<url>dav:https://dav.codehaus.org/zoneinfo-tz/</url>
 		</site>
-		<snapshotRepository>
-			<id>zoneinfo-tz</id>
-			<name>Zoneinfo TZ Snapshot Repository</name>
-			<url>dav:https://dav.codehaus.org/snapshots.dist/zoneinfo-tz/
-			</url>
-		</snapshotRepository>
 	</distributionManagement>
 	<inceptionYear>2010</inceptionYear>
 	<issueManagement>
@@ -132,9 +141,9 @@
 		</plugins>
 	</reporting>
 	<scm>
-		<connection>scm:svn:http://svn.codehaus.org/zoneinfo-tz/</connection>
-		<developerConnection>scm:svn:https://svn.codehaus.org/zoneinfo-tz/</developerConnection>
-		<url>http://fisheye.codehaus.org/browse/zoneinfo-tz/</url>
+		<connection>scm:svn:http://svn.codehaus.org/zoneinfo-tz/trunk</connection>
+		<developerConnection>scm:svn:https://svn.codehaus.org/zoneinfo-tz/trunk</developerConnection>
+		<url>http://fisheye.codehaus.org/browse/zoneinfo-tz/trunk</url>
 	</scm>
 	<url>http://zoneinfo-tz.codehaus.org/</url>
 

@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.classactionpl.tz</groupId>
 	<artifactId>zoneinfo-tz</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<name>Zoneinfo TimeZone</name>
 	<description>Brings the ability to parse a zoneinfo text stream and
 		create Java's SimpleTimeZone classes from them.</description>
@@ -141,9 +140,9 @@
 		</plugins>
 	</reporting>
 	<scm>
-		<connection>scm:svn:http://svn.codehaus.org/zoneinfo-tz/trunk</connection>
-		<developerConnection>scm:svn:https://svn.codehaus.org/zoneinfo-tz/trunk</developerConnection>
-		<url>http://fisheye.codehaus.org/browse/zoneinfo-tz/trunk</url>
+		<connection>scm:svn:http://svn.codehaus.org/zoneinfo-tz/tags/zoneinfo-tz-1.0.1</connection>
+		<developerConnection>scm:svn:https://svn.codehaus.org/zoneinfo-tz/tags/zoneinfo-tz-1.0.1</developerConnection>
+		<url>http://fisheye.codehaus.org/browse/zoneinfo-tz/tags/zoneinfo-tz-1.0.1</url>
 	</scm>
 	<url>http://zoneinfo-tz.codehaus.org/</url>
 

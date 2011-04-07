@@ -141,8 +141,8 @@
 		</plugins>
 	</reporting>
 	<scm>
-		<connection>scm:svn:http://svn.codehaus.org/zoneinfo-tz/trunk</connection>
-		<developerConnection>scm:svn:https://svn.codehaus.org/zoneinfo-tz/trunk</developerConnection>
+		<connection>scm:svn:http://svn.codehaus.org/zoneinfo-tz/trunk/Zoneinfo%20TZ</connection>
+		<developerConnection>scm:svn:https://svn.codehaus.org/zoneinfo-tz/trunk/Zoneinfo%20TZ</developerConnection>
 		<url>http://fisheye.codehaus.org/browse/zoneinfo-tz/trunk</url>
 	</scm>
 	<url>http://zoneinfo-tz.codehaus.org/</url>

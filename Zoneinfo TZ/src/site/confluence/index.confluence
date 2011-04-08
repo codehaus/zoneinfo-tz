@@ -1,16 +1,14 @@
 h1. Zoneinfo TZ
 
-Zoneinfo TZ is a Java time zone library that parses [zoneinfo|http://www.twinsun.com/tz/tz-link.htm] files and produces a JDK compatible facade for returning time zone information. The library uses ANTLR to parse the zoneinfo files. The following diagram outlines its structure:
-
-!images/classDiagram.png!
+Zoneinfo TZ is a Java time zone library that parses [zoneinfo|http://www.twinsun.com/tz/tz-link.htm] files and produces a JDK compatible facade for returning time zone information.
 
 The motivations to create this library were to:
-* be able to dynamically update time zone information without restarting an application; and
-* be able to honour the zoneinfo structure.
+* be able to regularly update time zone information without restarting an application; and
+* be able to honour the zoneinfo structure in order to support the intricate rules that exist.
 
-{note}
-The 1.0.0 version of this project will be available from the Maven central repository shortly. Meanwhile it can be obtained by adding https://dav.codehaus.org/repository/zoneinfo-tz/ as a release repository to your Maven environment.
-{note}
+The following diagram outlines this library's structure:
+
+!images/classDiagram.png!
 
 The following code illustrates how a file based zoneinfo resource can be loaded:
 
